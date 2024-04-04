@@ -20,21 +20,14 @@ class View(QWidget):
         
         self.le1=QLineEdit('0',self)
         self.le1.setAlignment(QtCore.Qt.AlignRight)
-<<<<<<< HEAD
         self.le1.setFocus(True)
         self.le1.selectAll()
-=======
->>>>>>> 838c92ac3d5e4d8114e5a72a27232dd47c5ac3f8
         
         self.le2=QLineEdit('0',self)
         self.le2.setAlignment(QtCore.Qt.AlignRight)
         
         self.cb = QComboBox(self)
-<<<<<<< HEAD
-        self.cb.addItems(['+', '-', '*', '/', '^'])
-=======
         self.cb.addItems(['+', '-', '*', '/'])
->>>>>>> 838c92ac3d5e4d8114e5a72a27232dd47c5ac3f8
         
         hbox_formular = QHBoxLayout()
         hbox_formular.addWidget(self.le1)
@@ -59,8 +52,8 @@ class View(QWidget):
         self.resize(256,256)
         self.show()
         
-    def setDisplay(self, text):
-        self.te1.appendPlainText(text)
+    def setDisplay(self):
+        self.te1.appendPlainText("Button clicked!")
         
     def clearMessage(self):
         self.te1.clear()
